@@ -1,0 +1,50 @@
+header
+   height: 1045px
+   background: url(../../images/initial__screen.png)
+
+@mixin navbar-item
+   +Condensed
+   +white
+   font-style: normal
+   font-weight: bold
+   font-size: 18px
+   line-height: 25px
+   letter-spacing: 0.1em
+   text-transform: uppercase
+   text-decoration: none
+
+.navbar-wrap
+   display: flex
+   justify-content: space-between
+   padding-top: 51px
+   .navbar__item
+      margin-right: 63px
+      +navbar-item
+      transition: 0.5s
+      animation-name: navbar
+      animation-duration: 2s
+      &:hover
+         +gold
+   .navbar__contact
+      +navbar-item
+      transition: 0.5s
+      &:hover
+         +gold
+   .navbar__phone
+      a
+         +navbar-item
+         font-size: 16px
+         line-height: 22px
+         text-align: right
+         letter-spacing: 0.05em
+         margin-right: 0
+      hr
+         width: 119px
+         height: 0px
+         border: 1px solid #D1A954
+
+@keyframes navbar
+   0%
+      margin-right: 0px
+   100%
+      margin-right: 63px

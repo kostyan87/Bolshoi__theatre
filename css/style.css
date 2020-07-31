@@ -2,4 +2,175 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.big-container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/");
+  src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Condensed Bold";
+  src: url("../fonts/OpenSansCondensed-Bold.eot");
+  src: url("../fonts/OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed-Bold.woff") format("woff"), url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  height: 1045px;
+  background: url(../../images/initial__screen.png);
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 51px;
+}
+
+.navbar-wrap .navbar__item {
+  margin-right: 63px;
+  font-family: "Open Sans Condensed Bold", sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-name: navbar;
+          animation-name: navbar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.navbar-wrap .navbar__item:hover {
+  color: #D1A954;
+}
+
+.navbar-wrap .navbar__contact {
+  font-family: "Open Sans Condensed Bold", sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar-wrap .navbar__contact:hover {
+  color: #D1A954;
+}
+
+.navbar-wrap .navbar__phone a {
+  font-family: "Open Sans Condensed Bold", sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  margin-right: 0;
+}
+
+.navbar-wrap .navbar__phone hr {
+  width: 119px;
+  height: 0px;
+  border: 1px solid #D1A954;
+}
+
+@-webkit-keyframes navbar {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 63px;
+  }
+}
+
+@keyframes navbar {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 63px;
+  }
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 1045px;
+  background: rgba(51, 51, 51, 0.75);
+  float: left;
+}
+
+.contact-info__text {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 250px;
+  font-family: "Open Sans Condensed Bold", sans-serif;
+  color: #C4C4C4;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 185px;
+}
+
+.contact-info__logo {
+  padding-bottom: 86px;
+}
+
+.contact-info hr {
+  width: 80px;
+  height: 0px;
+  border: 1px solid #C4C4C4;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-bottom: 80px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+// Золотая кнопка
+@mixin gold-button
+   width: 160px
+   height: 50px
+   background: #D1A954
+   +Condensed
+   font-style: normal
+   font-weight: bold
+   font-size: 18px
+   line-height: 25px
+   text-align: center
+   letter-spacing: 0.1em
+   text-transform: uppercase
+   +white
+   outline: none
+   border: none
+   cursor: pointer
+   transition: all 0.4s
+   &:hover
+      transform: scale(1.05)
+   
+.hero
+   &__wrap
+      display: flex
+      margin-top: 191px
+      justify-content: space-between
+   &__theatre
+      display: flex
+      flex-direction: column
+      h1
+         +Condensed
+         font-style: normal
+         font-weight: bold
+         font-size: 64px
+         line-height: 87px
+         letter-spacing: 0.1em
+         text-transform: uppercase
+         +white
+      span
+         +Regular
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 150%
+         +white
+      button
+         margin-top: 49px
+         +gold-button
+   

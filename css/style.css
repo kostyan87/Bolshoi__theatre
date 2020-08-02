@@ -13,22 +13,6 @@
   margin: auto;
 }
 
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/");
-  src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Condensed Bold";
-  src: url("../fonts/OpenSansCondensed-Bold.eot");
-  src: url("../fonts/OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed-Bold.woff") format("woff"), url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 header {
   height: 1045px;
   background: url(../../images/initial__screen.png);
@@ -46,7 +30,7 @@ header {
 
 .navbar-wrap .navbar__item {
   margin-right: 63px;
-  font-family: "Open Sans Condensed Bold", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold;
@@ -68,7 +52,7 @@ header {
 }
 
 .navbar-wrap .navbar__contact {
-  font-family: "Open Sans Condensed Bold", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold;
@@ -86,7 +70,7 @@ header {
 }
 
 .navbar-wrap .navbar__phone a {
-  font-family: "Open Sans Condensed Bold", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold;
@@ -150,7 +134,7 @@ header {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   width: 250px;
-  font-family: "Open Sans Condensed Bold", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #C4C4C4;
   font-style: normal;
   font-weight: bold;
@@ -192,26 +176,29 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 117px;
 }
 
 .hero__theatre h1 {
-  font-family: "Open Sans Condensed Bold", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
-  line-height: 87px;
+  line-height: 64px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .hero__theatre span {
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
   color: #FFFFFF;
+  margin-top: 50px;
 }
 
 .hero__theatre button {
@@ -219,7 +206,7 @@ header {
   width: 160px;
   height: 50px;
   background: #D1A954;
-  font-family: "Open Sans Condensed Bold", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -231,12 +218,107 @@ header {
   outline: none;
   border: none;
   cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.hero__theatre button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.hero__theatre button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section__field {
+  height: 3390px;
+  background-color: #333333;
+}
+
+.blocks-header {
+  display: block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 150px;
+}
+
+.blocks-header span {
+  color: #D1A954;
+}
+
+.about-theatre__wrap {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-theatre__best-theatre h1 {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about-theatre__best-theatre p {
+  margin: 0;
+  margin-top: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.about-theatre__digits h1 {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about-theatre__digits .about-theatre-digits__chair {
+  margin-top: 26px;
+}
+
+.about-theatre__digits p {
+  margin: 0;
+  margin-top: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.about-theatre__digits p span {
+  color: #D1A954;
+}
+
+.about-theatre__digits .about-theatre-digits__history {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

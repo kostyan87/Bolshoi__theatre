@@ -1,2 +1,31 @@
-1)Заменить некоторые миксины на перменные
+1)Переделать ссылки на соц сети в контактной информации
 2)Сделать адаптив
+3)Сделать якоря
+4)Сделать контакную информацию
+
+
+@font-face {
+   font-family: "Open Sans Regular";
+   src: url("../fonts/");
+   src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"),
+      url("../fonts/OpenSans-Regular.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Open Sans Condensed Bold";
+   src: url("../fonts/OpenSansCondensed-Bold.eot");
+   src: url("../fonts/OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/OpenSansCondensed-Bold.woff") format("woff"), url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@mixin Regular {
+   font-family: "Open Sans Regular", sans-serif;
+}
+
+@mixin Condensed {
+   font-family: "Open Sans Condensed Bold", sans-serif;
+}

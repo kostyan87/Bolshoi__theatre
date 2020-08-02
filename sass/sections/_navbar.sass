@@ -4,7 +4,7 @@ header
 
 @mixin navbar-item
    +Condensed
-   +white
+   color: $white
    font-style: normal
    font-weight: bold
    font-size: 18px
@@ -24,12 +24,12 @@ header
       animation-name: navbar
       animation-duration: 2s
       &:hover
-         +gold
+         color: $gold
    .navbar__contact
       +navbar-item
       transition: 0.5s
       &:hover
-         +gold
+         color: $gold
    .navbar__phone
       a
          +navbar-item

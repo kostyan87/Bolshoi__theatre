@@ -1,0 +1,102 @@
+.perfomances
+   &__wrap
+      display: flex
+      justify-content: flex-end
+      margin-top: 100px
+      .perfomances__card
+         display: flex
+         flex-direction: column
+         justify-content: space-between
+         width: 442px
+         height: 550px
+         h3
+            margin: 0
+            padding: 40px 0 0 40px
+            +Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 33px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: $white
+         .span__wrap
+            height: 140px
+            width: 30px
+            span
+               display: block
+               width: 140px
+               +Condensed
+               font-style: normal
+               font-weight: bold
+               font-size: 18px
+               line-height: 25px
+               letter-spacing: 0.1em
+               text-transform: uppercase
+               color: $white
+               transform: rotate(-90deg)         
+      .perfomances__item2
+         width: 442px
+         height: 550px
+         background: url(../images/searchBGC.png)
+         display: flex
+         justify-content: center
+         align-items: center
+         button
+            width: 100px
+            height: 100px
+            background: $gold
+            outline: none
+            border: none
+            border-radius: 50px
+            transition: all 0.2s
+            cursor: pointer
+            &:active
+               transform: scale(1.1)
+      .perfomances__item1
+         background: url(../images/oscar.png)
+      .perfomances__item3
+         background: url(../images/goldGram.png)
+      .perfomances__item4
+         background: url(../images/Shelkunchik.png)
+
+.rewards
+   width: 1110px
+   height: 550px
+   background: url(../images/rewardsBG.png)
+   margin-top: 150px
+   display: flex
+   justify-content: center
+   align-items: center
+   &__wrap
+      height: 250px
+      width: 760px
+      display: flex
+      align-items: center
+      .rewards__years
+         display: flex
+         flex-direction: column
+         span
+            +Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 72px
+            line-height: 50px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: $gold
+            margin-bottom: 44px
+      .rewards__title
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+         align-self: flex-start
+         margin-left: 153px
+         span
+            margin-top: 25px
+            +Regular
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 150%
+            color: $white  

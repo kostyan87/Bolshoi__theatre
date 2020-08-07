@@ -1,0 +1,80 @@
+.maecenas__wrap
+   margin-top: 100px
+   display: flex
+   justify-content: space-between
+   .maecenas__contact
+      display: flex
+      flex-direction: column
+      a
+         margin-bottom: 20px
+         +Condensed
+         font-style: normal
+         font-weight: bold
+         font-size: 16px
+         line-height: 22px
+         letter-spacing: 0.05em
+         text-transform: uppercase
+         text-decoration: none
+         color: $white
+         width: 135px
+         &:last-child
+            width: 250px
+   .maecenas__form
+      display: flex
+      flex-direction: column
+      width: 750px
+      form
+         display: flex
+         justify-content: flex-end
+         .form__col
+            width: 180px
+            &:first-child
+               margin-right: 30px
+            &:last-child
+               width: 310px
+               margin-left: 50px
+            input
+               width: 180px
+               height: 35px
+               margin-bottom: 30px
+               background-color: #444
+               border: 1px solid #616161
+               &::placeholder
+                  color: #989898
+                  +Regular
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 12px
+                  line-height: 150%
+            textarea
+               width: 310px
+               height: 100px
+               background-color: #444
+               border: 1px solid #616161
+               resize: none
+               &::placeholder
+                  color: #989898
+                  +Regular
+                  font-style: normal
+                  font-weight: 600
+                  font-size: 12px
+                  line-height: 150%
+         .form__col input[type='text']
+            padding-left: 15px
+         .form__col textarea[type='text']
+            padding-left: 15px
+            padding-top: 7px
+      .maecenas__button
+         display: flex
+         justify-content: space-between
+         margin-top: 10px
+         button
+            +gold-button
+            width: 190px
+         span   
+            +Regular
+            font-style: normal
+            font-weight: normal
+            font-size: 12px   
+            line-height: 150%
+            color: #989898

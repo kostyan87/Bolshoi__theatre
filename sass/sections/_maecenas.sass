@@ -28,6 +28,16 @@
          justify-content: flex-end
          .form__col
             width: 180px
+            p
+               margin: 0
+            .enter-text
+               color: blue
+               color: $white
+               +Regular
+               font-style: normal
+               font-weight: 600
+               font-size: 12px
+               line-height: 150%
             &:first-child
                margin-right: 30px
             &:last-child
@@ -46,12 +56,16 @@
                   font-weight: 600
                   font-size: 12px
                   line-height: 150%
+               &:focus
+                  outline: none
             textarea
                width: 310px
                height: 100px
                background-color: #444
                border: 1px solid #616161
                resize: none
+               &:focus
+                  outline: none
                &::placeholder
                   color: #989898
                   +Regular

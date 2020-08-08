@@ -12,13 +12,16 @@
 
    <!-- Шапка сайта -->
    <header>
-      <div class="big-container">
+      <div class="big-container" id="main">
       
          <!-- Контактная информация -->
-         <div class="contact-info">
+         <div class="contact-info" id="contacts">
             <span class="contact-info__text">контактная информация</span>
             <hr>
-            <img src="images/social.png" alt="#" class="contact-info__logo">
+            <a href="https://www.instagram.com/bolshoi_theatre/"><img src="images/insta.png" alt="" class="contact-info__logo"></a>
+            <a href="https://vk.com/bolshoitheatre"><img src="images/facebook.png" alt="" class="contact-info__logo"></a>
+            <a href="https://www.facebook.com/bolshoitheatre"><img src="images/vk.png" alt="" class="contact-info__logo"></a>
+            <a href="https://www.youtube.com/user/bolshoi"><img src="images/youtube.png" alt="" class="contact-info__logo"></a>
          </div>
 
          <div class="container">
@@ -26,11 +29,11 @@
             <nav>
                <div class="navbar-wrap">
                   <div class="navbar">
-                     <a href="#" class="navbar__item">Главная</a>
-                     <a href="#" class="navbar__item">о театре</a>
-                     <a href="#" class="navbar__item">Наши постановки</a>
-                     <a href="#" class="navbar__item">партнеры театра</a>
-                     <a href="#" class="navbar__contact">контакты</a>
+                     <a href="#main" class="navbar__item">Главная</a>
+                     <a href="#aboutTheatre" class="navbar__item">о театре</a>
+                     <a href="#ourPerformances" class="navbar__item">Наши постановки</a>
+                     <a href="#ourPartners" class="navbar__item">партнеры театра</a>
+                     <a href="#contacts" class="navbar__contact">контакты</a>
                   </div>
                   <div class="navbar__phone">
                      <a href="tel:+74951234567">+7 495 123-45-67</a>
@@ -62,7 +65,7 @@
 
          <div class="container">
          <!-- Блок "О театре" -->
-            <section class="about-theatre">
+            <section class="about-theatre" id="aboutTheatre">
                <span class="blocks-header"><span>о</span> театре</span>
                <div class="about-theatre__wrap">
                   <div class="about-theatre__best-theatre">
@@ -82,7 +85,7 @@
          </div>
 
          <!-- Блок "Наши постановки" -->
-         <section class="performances">
+         <section class="performances" id="ourPerformances">
             <span class="blocks-header"><span>наши</span> постановки</span>
             <div class="perfomances__wrap">
                <div class="perfomances__item1 perfomances__card">
@@ -126,7 +129,7 @@
 
          <div class="container">
             <!-- Блок "Партнеры театра" -->
-            <section class="partners">
+            <section class="partners" id="ourPartners">
                <span class="blocks-header"><span>партнеры</span> театра</span>
                <div class="partners__wrap">
                   <div class="partners__row">
@@ -159,15 +162,15 @@
                   <div class="maecenas__form">
                      <form action="#">
                         <div class="form__col">
-                           <input class="form-username" type="text" placeholder="Имя">
-                           <input class="form-tel" type="text" placeholder="Телефон">
+                           <p><input class="form-username enter-text" type="text" placeholder="Имя"></p>
+                           <p><input class="form-tel enter-text" type="text" placeholder="Телефон"></p>
                         </div>
                         <div class="form__col">
-                           <input class="form-company" type="text" placeholder="Компания">
-                           <input class="form-mail" type="text" placeholder="E-mail">
+                           <p><input class="form-company enter-text" type="text" placeholder="Компания"></p>
+                           <p><input class="form-mail enter-text" type="text" placeholder="E-mail"></p>
                         </div>
                         <div class="form__col">
-                           <textarea placeholder="Сообщение" type='text'></textarea>
+                           <p><textarea placeholder="Сообщение" type='text' class="enter-text"></textarea></p>
                         </div>
                      </form>
                      <div class="maecenas__button">

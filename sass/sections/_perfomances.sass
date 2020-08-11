@@ -2,7 +2,7 @@
    &__wrap
       display: flex
       justify-content: flex-end
-      margin-top: 100px
+      margin-top: 100px 
       .perfomances__card
          display: flex
          flex-direction: column
@@ -60,8 +60,13 @@
       .perfomances__item4
          background: url(../images/Shelkunchik.png)
 
+.rewards-wrappper
+   display: flex
+   justify-content: center
+   align-items: center
+
 .rewards
-   width: 1110px
+   width: 1063px
    height: 550px
    background: url(../images/rewardsBG.png)
    margin-top: 150px
@@ -99,4 +104,29 @@
             font-weight: bold
             font-size: 36px
             line-height: 150%
-            color: $white  
+            color: $white
+
+@media ( max-width:1024px )
+   .perfomances
+      &__wrap
+         max-width: 760px
+         margin-left: 179px
+         flex-wrap: wrap
+         .perfomances__item1
+            flex-basis: 50%
+         .perfomances__item2
+            flex-basis: 50%
+         .perfomances__item3
+            flex-basis: 50%
+         .perfomances__item4
+            flex-basis: 50%
+
+@media ( max-width:1024px )
+   .rewards
+      max-width: 1024px
+      &__wrap
+         .rewards__years
+            margin-left: 80px
+         .rewards__title
+            span
+               font-size: 30px

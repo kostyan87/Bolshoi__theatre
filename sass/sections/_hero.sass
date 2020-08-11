@@ -20,6 +20,9 @@
       transform: scale(1.1)
    
 .hero
+   &__picture
+      @media ( max-width:992px )
+         display: none
    &__wrap
       display: flex
       margin-top: 191px
@@ -28,6 +31,8 @@
       display: flex
       flex-direction: column
       margin-top: 117px
+      @media ( max-width:992px )
+         margin-top: 76px
       h1
          +Condensed
          font-style: normal
@@ -49,3 +54,8 @@
       button
          margin-top: 49px
          +gold-button
+
+@media ( max-width:1024px )
+   .hero
+      &__picture
+         display: none

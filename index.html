@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/normalize.css">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -28,18 +29,34 @@
             <!-- Навигационная панель -->
             <nav>
                <div class="navbar-wrap">
+                  <div class="navbar__burger">
+                     <hr class="burger-first-line burger-line">
+                     <hr class="burger-second-line burger-line">
+                     <hr class="burger-third-line burger-line">
+                  </div>
                   <div class="navbar">
-                     <a href="#main" class="navbar__item">Главная</a>
+                     <div class="navbar__cross">
+                        <span></span>
+                     </div>
+                     <a href="#main" class="navbar__item navbar__first-item">Главная</a>
                      <a href="#aboutTheatre" class="navbar__item">о театре</a>
                      <a href="#ourPerformances" class="navbar__item">Наши постановки</a>
                      <a href="#ourPartners" class="navbar__item">партнеры театра</a>
                      <a href="#contacts" class="navbar__contact">контакты</a>
+                     <div class="navbar__social">
+                        <a href="https://www.facebook.com/bolshoitheatre" ><img src="images/burger-facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/bolshoi_theatre/" class="social-item"><img src="images/burger-insta.png" alt=""></a>
+                        <a href="https://www.youtube.com/user/bolshoi" class="last-social-item"><img src="images/burger-youtube.png" alt=""></a>
+                        <a href="https://vk.com/bolshoitheatre" class="social-item last-social-item"><img src="images/burger-vk.png" alt=""></a>
+                     </div>
                   </div>
                   <div class="navbar__phone">
                      <a href="tel:+74951234567">+7 495 123-45-67</a>
                      <hr>
                   </div>
                </div>
+               <!-- Скрипт для меню-бургера -->
+               <script src="js/menu_script.js"></script>
             </nav>
 
             <!-- Блок hero -->
@@ -70,7 +87,7 @@
                <div class="about-theatre__wrap">
                   <div class="about-theatre__best-theatre">
                      <h1>Самый лучший театр СПБ</h1>
-                     <p>Как свидетельствуют архивные документы, первое каменное<br> здание. Большого театра начали возводить в 1775 году по<br> проекту Антонио Ринальди.В дальнейшем, после того как<br> Ринальди упал с лесов и не мог лично наблюдать за ходом<br> работ, Екатерина II поручила немецкому театральному<br> декоратору и архитектору Людвигу Филиппу Тишбейну создать<br> новый проект театра, который и был воплощён архитекторами<br> Ф. В. фон Бауром и М. А.Деденёвым. Открытие его состоялось в<br> 1783 году, хотя, основываясь на других свидетельствах, годом<br> открытия можно считать 1784 год.</p>
+                     <p>Как свидетельствуют архивные документы, первое каменное<br> здание Большого театра начали возводить в 1775 году по<br> проекту Антонио Ринальди.В дальнейшем, после того как<br> Ринальди упал с лесов и не мог лично наблюдать за ходом<br> работ, Екатерина II поручила немецкому театральному<br> декоратору и архитектору Людвигу Филиппу Тишбейну создать<br> новый проект театра, который и был воплощён архитекторами<br> Ф. В. фон Бауром и М. А.Деденёвым. Открытие его состоялось в<br> 1783 году, хотя, основываясь на других свидетельствах, годом<br> открытия можно считать 1784 год.</p>
                   </div>
                   <div class="about-theatre__digits">
                      <h1>немного о цифрах</h1>
@@ -165,7 +182,7 @@
                            <p><input class="form-username enter-text" type="text" placeholder="Имя"></p>
                            <p><input class="form-tel enter-text" type="text" placeholder="Телефон"></p>
                         </div>
-                        <div class="form__col">
+                        <div class="form__col second-form__col">
                            <p><input class="form-company enter-text" type="text" placeholder="Компания"></p>
                            <p><input class="form-mail enter-text" type="text" placeholder="E-mail"></p>
                         </div>

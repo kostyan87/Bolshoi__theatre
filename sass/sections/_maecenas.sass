@@ -1,3 +1,7 @@
+.maecenas
+   .blocks-header
+      padding-top: 40px
+
 .maecenas__wrap
    margin-top: 100px
    display: flex
@@ -108,3 +112,51 @@
          .right-link
             text-align: right
             padding-right: 10px
+
+@media ( max-width: 768px )
+   .maecenas__wrap
+      margin-top: 60px
+      .maecenas__form
+         width: auto
+         form
+            .form__col
+               &:last-child
+                  margin-left: 30px
+                  textarea
+                     width: 270px
+
+@media ( max-width: 576px )
+   .maecenas__wrap
+      .maecenas__form
+         form
+            flex-wrap: wrap
+            .form__col
+               flex-basis: 50%
+               margin-right: 0
+               input
+                  width: 230px
+               &:first-child
+                  margin-right: 0
+               &:last-child
+                  flex-basis: 100%
+                  margin-left: 0
+                  p
+                     textarea
+                        width: 510px
+                        margin: 0 auto
+            .second-form__col
+               p
+                  display: block
+                  float: right
+         .maecenas__button
+            flex-direction: column-reverse
+            text-align: center
+            margin-top: 40px
+            button
+               margin: 0 auto
+            span
+               margin-top: 30px
+      .maecenas__contact
+         margin-top: 50px
+         .right-link
+            padding-right: 0

@@ -13,6 +13,7 @@
 
 @media ( max-width:1024px )
    .partners__wrap
+      margin-top: 60px
       .partners__row
          display: flex
          flex-wrap: wrap
@@ -21,9 +22,23 @@
             margin-bottom: 40px
             .gazprom
                margin-left: 90px
-            .first-elem
-               margin-left: 90px
+            .first-elem, .third-elem
+               margin-left: 50px
          .last-elem
             margin-bottom: 0
       .row2
          margin-top: 0
+
+@media ( max-width:576px )
+   .partners__wrap
+      margin-top: 60px
+      .partners__row
+         display: flex
+         flex-wrap: wrap
+         .row-item
+            flex-basis: 50%
+            margin-bottom: 40px
+            .gazprom
+               margin-left: 25px
+            .first-elem, .third-elem
+               margin-left: 25px

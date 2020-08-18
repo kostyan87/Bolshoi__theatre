@@ -4,7 +4,15 @@
 
 @media ( max-width:1024px )
    .section__field
-      height: 4380px
+      height: 4080px
+
+@media ( max-width:768px )
+   .section__field
+      height: 4010px
+
+@media ( max-width:576px )
+   .section__field
+      height: 3930px
 
 .blocks-header
    display: block
@@ -20,6 +28,14 @@
    padding-top: 150px
    span
       color: $gold
+
+@media ( max-width:1024px )
+   .blocks-header
+      padding-top: 90px
+
+@media ( max-width:576px )
+   .blocks-header
+      padding-top: 80px
 
 .about-theatre__wrap
    margin-top: 100px
@@ -80,3 +96,20 @@
    .about-theatre__wrap
       .about-theatre__image
          display: none
+
+@media ( max-width: 576px )
+   .about-theatre__wrap
+      flex-direction: column
+      margin-top: 60px
+      .about-theatre__digits
+         margin: 0 auto
+         text-align: center
+         h1
+            margin-top: 27px
+      .about-theatre__best-theatre
+         h1
+            text-align: center
+         p
+            text-align: center
+            br
+               display: none

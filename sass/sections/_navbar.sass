@@ -12,6 +12,10 @@ header
      height: 600px
      background: url(../../images/hero-background-small.png)
 
+@media ( max-width: 426px )
+   header
+     height: 500px
+
 @mixin navbar-item
    +Condensed
    color: $white
@@ -183,12 +187,39 @@ header
             width: 14px
             margin-bottom: 0
 
-/*@media ( max-width:576px )
+@media ( max-width:576px )
    .navbar-wrap
       .navbar
          width: 250px
-         height: 600px*/
+         height: 600px
+         a
+            font-size: 20px
+            line-height: 23px
+            margin-top: 25px
+         .navbar__cross
+            span
+               &::before, &::after
+                  margin-top: 35px
+                  margin-left: 200px
+      .navbar__social
+         margin-top: 30px
+         margin-left: 50px
+         .last-social-item
+            margin-top: 45px
 
 @media ( max-width:426px )
    .navbar-wrap
       padding-top: 25px
+      .navbar
+         height: 500px
+         .navbar__first-item
+            padding-top: 70px
+         &__social
+            a
+               img
+                  height: 30px
+                  margin-left: 20px
+            .last-social-item
+               img
+                  height: auto
+                  width: 35px

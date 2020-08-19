@@ -65,6 +65,12 @@ header {
   }
 }
 
+@media (max-width: 426px) {
+  header {
+    height: 500px;
+  }
+}
+
 .navbar__burger {
   display: none;
 }
@@ -361,14 +367,46 @@ header {
   }
 }
 
-/*@media ( max-width:576px )
-   .navbar-wrap
-      .navbar
-         width: 250px
-         height: 600px*/
+@media (max-width: 576px) {
+  .navbar-wrap .navbar {
+    width: 250px;
+    height: 600px;
+  }
+  .navbar-wrap .navbar a {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 25px;
+  }
+  .navbar-wrap .navbar .navbar__cross span::before, .navbar-wrap .navbar .navbar__cross span::after {
+    margin-top: 35px;
+    margin-left: 200px;
+  }
+  .navbar-wrap .navbar__social {
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  .navbar-wrap .navbar__social .last-social-item {
+    margin-top: 45px;
+  }
+}
+
 @media (max-width: 426px) {
   .navbar-wrap {
     padding-top: 25px;
+  }
+  .navbar-wrap .navbar {
+    height: 500px;
+  }
+  .navbar-wrap .navbar .navbar__first-item {
+    padding-top: 70px;
+  }
+  .navbar-wrap .navbar__social a img {
+    height: 30px;
+    margin-left: 20px;
+  }
+  .navbar-wrap .navbar__social .last-social-item img {
+    height: auto;
+    width: 35px;
   }
 }
 
@@ -536,6 +574,25 @@ header {
   }
 }
 
+@media (max-width: 426px) {
+  .hero__wrap {
+    margin-top: 80px;
+  }
+  .hero__theatre {
+    text-align: center;
+  }
+  .hero__theatre h1 {
+    font-size: 48px;
+  }
+  .hero__theatre span {
+    margin-top: 20px;
+  }
+  .hero__theatre button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
 .section__field {
   height: 3440px;
   background-color: #333333;
@@ -556,6 +613,12 @@ header {
 @media (max-width: 576px) {
   .section__field {
     height: 3930px;
+  }
+}
+
+@media (max-width: 426px) {
+  .section__field {
+    height: 3340px;
   }
 }
 
@@ -586,6 +649,13 @@ header {
 @media (max-width: 576px) {
   .blocks-header {
     padding-top: 80px;
+  }
+}
+
+@media (max-width: 426px) {
+  .blocks-header {
+    padding-top: 70px;
+    font-size: 36px;
   }
 }
 
@@ -690,6 +760,19 @@ header {
   }
   .about-theatre__wrap .about-theatre__best-theatre p br {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-theatre__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .about-theatre__best-theatre p {
+    margin-top: 30px;
   }
 }
 
@@ -963,6 +1046,62 @@ header {
   }
 }
 
+@media (max-width: 426px) {
+  .perfomances__wrap {
+    margin-top: 40px;
+  }
+  .perfomances__wrap .perfomances__card {
+    height: 250px;
+  }
+  .perfomances__wrap .perfomances__card h3 {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 25px;
+  }
+  .perfomances__wrap .perfomances__card .span__wrap {
+    display: none;
+  }
+  .perfomances__wrap .perfomances__item2 {
+    height: 250px;
+    background: url(../images/searchBGC__small.png);
+  }
+  .perfomances__wrap .perfomances__item2 button {
+    width: 80px;
+    height: 80px;
+  }
+  .perfomances__wrap .perfomances__item1 {
+    background: url(../images/oscar__small.png);
+  }
+  .perfomances__wrap .perfomances__item3 {
+    background: url(../images/goldGram__small.png);
+  }
+  .perfomances__wrap .perfomances__item4 {
+    background: url(../images/Shelkunchik__small.png);
+  }
+}
+
+@media (max-width: 426px) {
+  .rewards {
+    margin-top: 60px;
+    max-width: 425px;
+    max-height: 400px;
+    background: url(../images/rewardsBG__small.png);
+  }
+  .rewards__wrap .rewards__years {
+    margin-left: 15px;
+  }
+  .rewards__wrap .rewards__years span {
+    font-size: 60px;
+    margin-bottom: 37px;
+  }
+  .rewards__wrap .rewards__title {
+    margin-left: 15px;
+  }
+  .rewards__wrap .rewards__title span {
+    font-size: 20px;
+  }
+}
+
 .partners__wrap {
   margin-top: 100px;
   display: -webkit-box;
@@ -1042,6 +1181,32 @@ header {
   }
   .partners__wrap .partners__row .row-item .first-elem, .partners__wrap .partners__row .row-item .third-elem {
     margin-left: 25px;
+  }
+}
+
+@media (max-width: 426px) {
+  .partners__wrap {
+    margin-top: 40px;
+  }
+  .partners__wrap .partners__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partners__wrap .partners__row .row-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+  .partners__wrap .partners__row .row-item .gazprom {
+    margin-left: 10px;
+    width: 150px;
+  }
+  .partners__wrap .partners__row .row-item .first-elem, .partners__wrap .partners__row .row-item .third-elem {
+    margin-left: 30px;
+    width: 150px;
   }
 }
 
@@ -1383,6 +1548,33 @@ header {
   }
 }
 
+@media (max-width: 426px) {
+  .maecenas__wrap {
+    margin-top: 45px;
+  }
+  .maecenas__wrap .maecenas__form form .form__col input {
+    width: 180px;
+  }
+  .maecenas__wrap .maecenas__form form .form__col:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0;
+  }
+  .maecenas__wrap .maecenas__form form .form__col:last-child p textarea {
+    width: 395px;
+  }
+  .maecenas__wrap .maecenas__contact a {
+    font-size: 14px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .maecenas__wrap .maecenas__contact .right-link {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    width: 200px;
+  }
+}
+
 footer .footer__line {
   margin: 0;
   margin-top: 80px;
@@ -1404,6 +1596,15 @@ footer span {
 @media (max-width: 576px) {
   footer .footer__line {
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 426px) {
+  footer .footer__line {
+    margin-top: 40px;
+  }
+  footer span {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

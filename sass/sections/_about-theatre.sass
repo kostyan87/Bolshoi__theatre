@@ -14,6 +14,10 @@
    .section__field
       height: 3930px
 
+@media ( max-width:426px )
+   .section__field
+      height: 3340px
+
 .blocks-header
    display: block
    +Condensed
@@ -36,6 +40,11 @@
 @media ( max-width:576px )
    .blocks-header
       padding-top: 80px
+
+@media ( max-width:426px )
+   .blocks-header
+      padding-top: 70px
+      font-size: 36px
 
 .about-theatre__wrap
    margin-top: 100px
@@ -113,3 +122,11 @@
             text-align: center
             br
                display: none
+
+@media ( max-width: 576px )
+   .about-theatre__wrap
+      flex-direction: column
+      margin-top: 30px
+   .about-theatre__best-theatre
+         p
+            margin-top: 30px

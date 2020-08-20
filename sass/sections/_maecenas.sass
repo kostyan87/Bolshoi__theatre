@@ -182,3 +182,39 @@
          .right-link
             flex-basis: 60%
             width: 200px
+
+@media ( max-width: 376px )
+   .maecenas__wrap
+      margin-top: 35px
+      .maecenas__form
+         form
+            .form__col
+               input
+                  width: 170px
+               &:last-child
+                  p
+                     textarea
+                        width: 366px
+
+@media ( max-width: 321px )
+   .maecenas__wrap
+      margin-top: 35px
+      .maecenas__form
+         form
+            .form__col
+               flex-basis: 100%
+               input
+                  width: 265px
+                  margin-left: 25px
+               &:last-child
+                  p
+                     textarea
+                        width: 265px
+                        margin-left: 25px
+            .second-form__col
+               p
+                  float: none
+      .maecenas__button
+         span
+            br
+               display: none

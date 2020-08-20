@@ -4,17 +4,17 @@ header
 
 @media ( max-width: 768px )
    header
-     height: 800px
-     background: url(../../images/hero-background.png)
+      height: 800px
+      background: url(../../images/hero-background.png)
 
 @media ( max-width: 576px )
    header
-     height: 600px
-     background: url(../../images/hero-background-small.png)
+      height: 600px
+      background: url(../../images/hero-background-small.png)
 
 @media ( max-width: 426px )
    header
-     height: 500px
+      height: 500px
 
 @mixin navbar-item
    +Condensed
@@ -78,10 +78,10 @@ header
       flex-direction: column
       
 /*@keyframes navbar
-   0%
-      margin-right: 0px
-   100%
-      margin-right: 63px*/
+ 0%
+ margin-right: 0px
+ 100%
+ margin-right: 63px*/
 
 @media ( max-width:1024px )
    .navbar-wrap
@@ -223,3 +223,31 @@ header
                img
                   height: auto
                   width: 35px
+
+@media ( max-width:321px )
+   .navbar-wrap
+      padding-top: 15px
+      .navbar
+         width: 160px
+         a
+            padding-left: 20px
+            font-size: 20px
+         .navbar__cross
+            span
+               &::before, &::after
+                  margin-top: 25px
+                  margin-left: 120px
+         .navbar__first-item
+            padding-top: 60px
+         &__social
+            margin-left: 10px
+            margin-top: 10px
+            a
+               img
+                  height: 30px
+                  margin-left: 0
+            .last-social-item
+               margin-top: 10px
+            .social-item
+               img
+                  float: left

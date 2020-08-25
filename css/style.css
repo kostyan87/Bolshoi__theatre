@@ -472,7 +472,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 150px;
-  height: 1045px;
+  height: 845px;
   background: rgba(51, 51, 51, 0.75);
   float: left;
   padding-bottom: 126px;
@@ -652,13 +652,13 @@ header {
 
 @media (max-width: 1024px) {
   .section__field {
-    height: 4080px;
+    height: 4110px;
   }
 }
 
 @media (max-width: 768px) {
   .section__field {
-    height: 4010px;
+    height: 3570px;
   }
 }
 
@@ -670,7 +670,7 @@ header {
 
 @media (max-width: 426px) {
   .section__field {
-    height: 3340px;
+    height: 3360px;
   }
 }
 
@@ -1366,10 +1366,6 @@ header {
   .partners__wrap .partners__row .row-item .first-elem, .partners__wrap .partners__row .row-item .third-elem {
     margin-left: 82.5px;
   }
-}
-
-.maecenas .blocks-header {
-  padding-top: 40px;
 }
 
 .maecenas__wrap {
